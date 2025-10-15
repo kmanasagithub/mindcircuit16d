@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy to Tomcat') {
             steps {
                 echo 'This stage deploys .war to tomcat webserver'
-                deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat', path: '', url: 'http://34-234-79-114:8080')], contextPath: 'Manasa_Pipleline_pro', war: '**/*.war'
+                deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat', path: '', url: 'http://34.234.79.114:8080')], contextPath: 'Manasa_Pipleline_pro', war: '**/*.war'
             }
         }		
 		
